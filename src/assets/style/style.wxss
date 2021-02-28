@@ -1,0 +1,57 @@
+body {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+li,
+ul,
+p,
+div,
+body,
+html,
+table {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+li {
+  list-style: none;
+}
+.btn {
+  min-width: 86px;
+  height: 32px;
+  line-height: 1;
+  font-size: 13px;
+  border-radius: 2px;
+}
+ /deep/ .ivu-form-item-label {
+  font-size: 14px;
+  color: #262626 !important;
+}
+ /deep/ .ivu-form-item-content {
+  color: #262626 !important;
+  font-size: 14px;
+}
+ /deep/ .ivu-input,
+ /deep/ .ivu-select-selected-value,
+ /deep/ .ivu-select-placeholder,
+ /deep/ .ivu-select-selection {
+  border-radius: 2px;
+  padding-left: 12px;
+  font-size: 13px!important;
+}
+ /deep/ .ivu-select-item {
+  padding: 7px 16px !important;
+}
+.ivu-table {
+  font-size: 13px  !important;
+}
+.ivu-table thead tr {
+  line-height: 40px;
+  color: #252525;
+}

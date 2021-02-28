@@ -1,0 +1,83 @@
+// 主题颜色
+@theme-color: #fff;  // 主题颜色白色
+@theme-color-s: #1890FF;  // 主题颜色蓝色
+
+// 背景颜色 + 边框颜色
+@bd-color: #D9D9D9; // 边框颜色
+@bd-color-s: #E3E9F0; // 边框颜色
+@bd-color-ss: #F0F0F0; // 边框颜色
+@btn-red-bgColor: #FF5253; // 按钮红色
+@box-bgColor: #FBFBFB;  // 盒子颜色
+@btn-bgColor-blue:#1890FF;
+
+// 字体大小
+@fontsize-small: 12px;
+@fontsize-middle: 14px;
+@fontsize-large: 16px;
+@fontsize-large-x: 18px;
+@fontsize-large-xx: 20px;
+@fontsize-large-xxx: 24px;
+@fontsize-large-xxxx: 28px;
+
+
+// 字体颜色
+@color-dark: #262626;  //字体颜色
+@color-dark-s: #404040;  //字体颜色
+@color-dark-ss: #5C5D69;  //字体颜色
+@color-grey: #8C8C8C;  //字体颜色
+
+
+
+body {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+li, ul, p, div, body, html, table {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+li {
+    list-style: none;
+}
+
+.btn {
+    min-width: 86px;
+    height: 32px;
+    line-height: 1;
+    font-size: 13px;
+    border-radius:2px;
+}
+
+/deep/.ivu-form-item-label {
+    font-size: @fontsize-middle;
+    color: @color-dark!important;
+}
+/deep/.ivu-form-item-content {
+    color: @color-dark!important;
+    font-size: @fontsize-middle;
+}
+/deep/.ivu-input,/deep/.ivu-select-selected-value,/deep/.ivu-select-placeholder,/deep/.ivu-select-selection{
+    border-radius: 2px;
+    padding-left: 12px;
+    font-size: 13px!important;
+}
+
+/deep/.ivu-select-item {
+    padding: 7px 16px !important;
+}
+
+.ivu-table {
+    font-size: 13px  !important;
+    thead {
+        tr {
+            line-height: 40px;
+            color: #252525;
+        }
+    } 
+  }
