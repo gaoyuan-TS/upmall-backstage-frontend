@@ -170,12 +170,12 @@ export default {
     this.spuid = this.$route.params.spuid
     this.getGroupInfo(this.spuid)
   },
-    watch: {
-    "$route.params.spuid"() {
-      this.spuid = this.$route.params.spuid
-      this.getGroupInfo(this.spuid)
-    },
-  },
+  //   watch: {
+  //   "$route.params.spuid"() {
+  //     this.spuid = this.$route.params.spuid
+  //     this.getGroupInfo(this.spuid)
+  //   },
+  // },
   methods: {
     getGroupInfo (id) {
       this.$get("/grouponActivities/getById/" + id).then(res => {

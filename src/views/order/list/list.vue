@@ -75,9 +75,9 @@
           <div class="orderType">买家：{{item.purchaser}}</div>
           <div class="orderType">支付日期：{{item.payTime}}</div>
            <div class="orderType">支付方式：{{item.payWay}}</div>
-            <div class="orderType">总价格（元）：{{item.shopList[0].totalGoodsAmout}}</div>
+            <div class="orderType">总价格（元）：{{item.totalGoodsAmout+item.totalCarriage}}</div>
             <div class="orderType">运费（元）：{{item.totalCarriage}}</div>
-           <div class="orderType">实收总价（元）：{{item.shopList[0].totalGoodsAmout}}</div>
+           <div class="orderType">商品总价（元）：{{item.totalGoodsAmout}}</div>
         </div>
         <div class="orderMess" v-for="(orderList_child, index1) in item.shopList" :key="index1">
           <Row v-if="index1===0">
@@ -552,7 +552,7 @@ export default {
       });
     },
     exportExel () {
-      let baseUrl = 'http://upopt.cntracechain.com/admin/orderMaster/export'
+      let baseUrl = 'http://restaurant-beta.cntracechain.com/admin/orderMaster/export'
       let url = this.StringParams(this.orderInfo)
       window.open(baseUrl + '?' + url)
     },

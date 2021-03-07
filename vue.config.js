@@ -3,7 +3,7 @@ module.exports = {
   devServer: {
     proxy: {
       '/api': {
-        target: 'http://upopt.cntracechain.com', //对应自己的接口
+        target: 'http://restaurant-beta.cntracechain.com', //对应自己的接口  测试 http://restaurant-beta.cntracechain.com
         changeOrigin: true,
         pathRewrite: {
           '^/api': '/'

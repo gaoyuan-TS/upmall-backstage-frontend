@@ -467,7 +467,7 @@ export default {
       });
     },
     exportExel() {
-      let baseUrl = "http://upopt.cntracechain.com/admin/shopMaster/export";
+      let baseUrl = "http://restaurant-beta.cntracechain.com/admin/shopMaster/export";
       let url = this.StringParams(this.orderInfo);
       window.open(baseUrl + "?" + url);
     },
